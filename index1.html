@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styles1.css">
+    </head> 
+    <body>
+        <!-- Popup Footer Text -->
+        <div id="popup" class="footer_text">Dare u to try and click on No 🤣😁</div>
+        
+        <!-- Main Content -->
+        <div class="main_content" id="mainContent">
+            <div class="container">
+                <div class="text-container">
+                    <h1 class="header_text">Do you wanna forgive me now?</h1>
+                    <h1 class="header_text">Are you free tonight?</h1>
+                </div>
+                <div class="gif_container">
+                    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif" alt="Cute animated illustration">
+                </div>
+                <div class="buttons">
+                    <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+                    <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Show the popup initially for 10 seconds
+            document.addEventListener('DOMContentLoaded', function() {
+                var popup = document.getElementById('popup');
+                var mainContent = document.getElementById('mainContent');
+
+                // After 10 seconds, hide the popup and show the main content
+                setTimeout(function() {
+                    popup.style.display = 'none'; // Hide popup
+                    mainContent.classList.add('show_main_content'); // Show the main content
+                }, 4000); // Hide after 10 seconds
+            });
+
+            function nextPage() {
+                window.location.href = "yes.html";
+            }
+            
+            function moveButton() {
+                var noButton = document.getElementById('noButton');
+                var x = Math.random() * (window.innerWidth - noButton.offsetWidth - 20);
+                var y = Math.random() * (window.innerHeight - noButton.offsetHeight - 20);
+                noButton.style.left = `${x}px`;
+                noButton.style.top = `${y}px`;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(189, 225, 122);
+}
+
+.header_text {
+    font-family: 'Nunito';
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_text {
+    font-family: 'Nunito', sans-serif; /* Matching the font style */
+    font-size: 35px; /* Adjust size as necessary */
+    font-weight: bold;
+    color: white; /* Contrasts well with the background */
+    text-align: center; /* Centers the text */
+    margin-top: 30px;
+    margin-bottom: 0px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow for readability */
+    background-color: rgba(0, 0, 0, 0.2); /* Slight background to enhance visibility */
+    padding: 15px; /* Adds spacing around the text */
+    border-radius: 10px; /* Rounded corners for a polished look */
+}
+

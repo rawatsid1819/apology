@@ -1,0 +1,76 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #4DC9FF; /* Matching the blue background from the image */
+    text-align: center;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif; /* Fun and playful font */
+    overflow: hidden; /* Prevents any overflow issues */
+}
+
+/* GIF container */
+.gif_container img {
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: none; /* Removing shadow */
+    margin-bottom: 20px;
+}
+
+/* Header text styling */
+.header_text {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 20px; /* Adjusted for a subtle spacing */
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1); /* Subtle background to make text stand out */
+}
+
+/* Buttons container */
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Centering buttons */
+}
+
+/* Button styling */
+.btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #FF69B4; /* Playful pink to match the cute theme */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.btn:hover {
+    background: #FF85C1; /* Lighter pink on hover */
+}
+
+.btn:active {
+    transform: scale(0.95); /* Small scale effect on click */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .header_text {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+}
